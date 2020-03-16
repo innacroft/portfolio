@@ -59,13 +59,14 @@ background-color:var(--ligth1-blue);
 
 .navbar-nav .nav-item{
   padding-left: 25px;
+
   }
   
 
 .navbar
 {
   background: linear-gradient(90deg,var( --ligth-violet) 10%,var(--ligth1-blue),var(--ligth2-blue)90% ) !important;
-  
+  outline: 0;
 }
 
 .nav_text {
@@ -76,6 +77,7 @@ background-color:var(--ligth1-blue);
   align-items: center ;
   padding: 0 50px ;
   transition: .2s ease-in-out all ;
+  outline: 0;
 }
 
 .nav_text:hover{
@@ -297,6 +299,7 @@ h5
   font-size:36px;
   transition:.3s;  
   background-color: transparent;
+  outline: 0;
 }
 
 
@@ -377,7 +380,7 @@ navbar-toggler:focus {
     display: flex ;
     align-items: center ;
     transition: .2s ease-in-out all  ;
-    
+    outline: 0;
   }
   .nav_text:hover{
     font-size: 17px;
@@ -392,5 +395,5 @@ navbar-toggler:focus {
     display: none;
   
   }
-  
+
 }
