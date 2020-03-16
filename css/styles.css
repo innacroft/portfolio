@@ -283,6 +283,23 @@ h5
 }
 
 
+.botonF1{
+  width:60px;
+  height:60px;
+  border-radius:100%;
+  right:60px;
+  bottom:50px;
+  position:fixed;
+  margin-right:16px;
+  margin-bottom:16px;
+  border:none;
+  outline:none;
+  font-size:36px;
+  transition:.3s;  
+  background-color: transparent;
+}
+
+
 @media (max-width: 991px) 
 {
 
@@ -366,6 +383,14 @@ navbar-toggler:focus {
     font-size: 17px;
     color: #909090;
     
+  }
+.botonF1{
+
+  display: none;
+}
+  .botonF1 img {
+    display: none;
+  
   }
   
 }
