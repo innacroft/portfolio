@@ -346,8 +346,8 @@ navbar-toggler:focus {
   font-size:12px;
 }
 
-.navbar-nav .nav-link {
-padding: 0px;
-}
+.navbar-nav .nav-item{
+  padding-left: 0px;
+  }
 
 }
