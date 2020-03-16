@@ -70,13 +70,13 @@ background-color:var(--ligth1-blue);
 }
 
 .nav_text {
-  color: var(--white);
+  color: var(--white) !important;
   font-size: 20px ;
   font-weight: lighter ;
   display: flex ;
   align-items: center ;
   padding: 0 50px ;
-  transition: .2s ease-in-out all ;
+  transition: .2s ease-in-out all !important;
   outline: 0;
 }
 
