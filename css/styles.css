@@ -23,7 +23,7 @@
 }
 
 #hero{
-  padding-top: 350px;
+  padding-top: 250px;
   padding-bottom: 50px;
 
 }
@@ -57,6 +57,10 @@ background-color:var(--ligth1-blue);
 }
 
 
+.navbar-nav .nav-item{
+  padding-left: 25px;
+  }
+  
 
 .navbar
 {
@@ -70,7 +74,7 @@ background-color:var(--ligth1-blue);
   font-weight: lighter !important;
   display: flex !important;
   align-items: center !important;
-  padding: 0 50px !important;
+  padding: 0 50px ;
   transition: .2s ease-in-out all !important;
 }
 
@@ -177,14 +181,20 @@ width: 100px;
   font-family: 'Lato', sans-serif;
 }
 
+
 .card-body .card-text{
   color:var(--black);
   font-size: 18px;
+  text-align: justify;
 }
 
 .card-body .card-title{
   color:var(--black);
   font-weight: bold;
+}
+
+.card{
+  text-align: justify;
 }
 
 .card-image{
@@ -202,7 +212,7 @@ width: 100px;
 }
 
 #proyectos {
-
+ text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
   
@@ -212,6 +222,7 @@ width: 100px;
   padding-top: 50px;
   padding-bottom: 100px;
   border-top: 1px solid var(--light-gray);
+  color: black;
   
 }
 
@@ -233,8 +244,10 @@ h5
   width: 50px;
   height: 50px;
   background-size: 50px 50px;
-  margin: 0 20px;
+  margin-right: 40px;
+  margin-top: 20px;
   margin-top: 30px;
+  
 
 }
 
@@ -252,14 +265,89 @@ h5
 #footer{
   background: linear-gradient(90deg,var( --ligth-violet) 10%,var(--ligth1-blue),var(--ligth2-blue)90% );
   color: var(--white);
+ 
 }
 
-#footer a {
+#footer a , #footer p {
   color: var(--white);
   padding-right:1px;
+  text-align: right;
 }
-#footer p {
-  color: var(--white);
-  padding-right:1px;
+
+.social2{
+  text-align: right;
 }
+
+.social2 img {
+  width: 160px;
+  padding-top: 10px;
+}
+
+
+@media (max-width: 991px) 
+{
+.navbar-brand img{
+    width: 50px;
+    height:  50px;
+  }
+
+.navbar-toggler{
+  border: 0px;
+}
+
+
+#hero{
+  padding-top: 160px;
+  padding-bottom: 50px;
+}
+
+#tecnologias {
+  
+  padding-bottom: 50px;
  
+}
+
+.no-gutters{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+}
+
+navbar-toggler:focus {
+  border: 0;
+}
+
+
+
+.social-link {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-size: 25px 25px;
+  margin-top: 30px;
+  
+}
+
+
+
+.social2 img {
+  width: 60px ;
+  height: 60px;
+  padding: 0px;
+  margin-left: 1px;
+}
+
+
+
+#footer p{
+  font-size:12px;
+}
+
+.navbar-nav .nav-link {
+padding: 0px;
+}
+
+}
