@@ -300,8 +300,13 @@ h5
   transition:.3s;  
   background-color: transparent;
   outline: 0;
+  
 }
 
+.botonF1 img {
+  outline: 0;
+
+}
 
 @media (max-width: 991px) 
 {
@@ -391,7 +396,8 @@ navbar-toggler:focus {
 
   display: none;
 }
-  .botonF1 img {
+
+.botonF1 img {
     display: none;
   
   }
