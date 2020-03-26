@@ -1,6 +1,5 @@
 ### My portfolio
-
-:tw-1f4dd: :tw-1f493:
+❤  📝 
 
 #### Technologies
 - HTML
@@ -18,3 +17,4 @@
 
 #### Author
 Innacroft
+[Link to My portfolio](https://innacroft.github.io/portfolio/)
