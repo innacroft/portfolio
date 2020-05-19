@@ -18,6 +18,5 @@
 #### Author
 Innacroft
 [Link to My portfolio](https://innacroft.github.io/portfolio/)
-****
-![](https://github.com/innacroft/portfolio/blob/master/images/back_inna.png)
+![](https://github.com/innacroft/portfolio/blob/gh-pages/images/back_inna.png)
 
