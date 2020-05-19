@@ -18,3 +18,6 @@
 #### Author
 Innacroft
 [Link to My portfolio](https://innacroft.github.io/portfolio/)
+### PATH STRUCTURE
+![](https://github.com/innacroft/portfolio/blob/master/images/back_inna.png)
+
