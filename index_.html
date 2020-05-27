@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Inna's Portfolio </title>
+  <link rel="icon" type="favicon.png" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="1000">
+  <!-------header----------->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-transparent fixed-top">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#hero">
+         <img src="images/logo.png" height="100" width="100" alt="navbar-brand"></a>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item">
+            <a class="nav-link nav_text" href="#hero">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav_text" href="#proyectos">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav_text" href="#tecnologias">Tecnologías</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav_text" href="#footer">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!------section Me-->
+  <section class="hero" id="hero">
+    <div class="container hero">
+      <div class="row">
+        <div class="col py-7 col-sm-12 col-md-12 col-lg rt2 text-center">
+          <img class="hero-image mr-3 rounded-circle" width="200" height="200" src="images/hero.jpg" alt="hero-image">
+          <p>Hola! Soy <strong>Ingrid Natalia </strong>!, soy desarrolladora backend
+            <br> y me apasiona la tecnología </p>
+          <a href="#about" class="btn btn-outline-primary btn-about"> Más sobre mí </a>
+        </div>
+      </div>
+    </div>
+    <button class="botonF1 text-center" >
+
+      <a class="image_scroll"   href="#hero" ><img src="images/up.png" width="30"  alt="up"> </a>
+    </button>
+  </section>
+
+  <!--Proyectos-->
+
+  <section id="proyectos" class="mt-4 mb-4">
+    <div class="container">
+      <div class="row mt-2 mb-4">
+        <div class="col text-center text-uppercase">
+          <h2>proyectos</h2>
+        </div>
+      </div>
+
+      <div class="card mb-3" ">
+        <div class=" row no-gutters">
+        <div class="col-md-10">
+          <div class="card-body ">
+            <h5 class="card-title mb-0">Instagram de platzi</h5>
+            <div class="badges">
+              <span class="badge badge-light-green"> python </span>
+              <span class="badge badge-dark-green"> django </span>
+              <span class="badge badge-light-blue"> mysql </span>
+              <span class="badge badge-light-red"> html </span>
+              <span class="badge badge-light-yellow"> css </span>
+              <span class="badge badge-ligth-violet"> bootstrap </span>
+
+            </div>
+            <p class="card-text mt-lg-3"> Se realiza una aplicación similar a instagram para realizar en django.
+              La aplicación se basa en publicaciones de fotografías hechas por usuarios, de allí cada usuario tendrá
+              publicaciones correspondientes, seguidores , personas seguidas y los detalles de las publicaciones.
+
+            </p>
+            <div class="text-center">
+           <a href="https://github.com/innacroft/Django/tree/master/platzigram "  class="btn btn-outline-primary card-button  " target="_blank">Ver más</a>
+          </div>
+          </div>
+        </div>
+        <div class="card-image col-md-2 text-center mt-lg-0">
+          <img src="images/platzigram.png" width="70" alt="platzigram">
+        </div>
+      </div>
+    </div>
+
+    <div class="card mb-3" ">
+        <div class=" row no-gutters">
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title mb-0">CRUD usuarios</h5>
+          <div class="badges">
+            <span class="badge badge-light-green"> python </span>
+            <span class="badge badge-light-blue"> sqlite </span>
+          </div>
+          <p class="card-text mt-lg-3"> Se realiza la estructura básica de un crud puramente en python para agregar,
+            editar,eliminar y buscar usuarios dentro de una base de datos.
+            
+          </p>
+          <div class="text-center">
+            <a href="https://github.com/innacroft/Crud_users "  class="btn btn-outline-primary card-button  " target="_blank">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-image col-md-2 text-center mt-lg-0">
+        <img src="images/crud.png" width="70" alt="crud">
+      </div>
+    </div>
+    </div>
+
+    <div class="card mb-3" ">
+        <div class=" row no-gutters">
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title mb-0">Sistema de grabación y transmisión de audio y video</h5>
+          <div class="badges">
+            <span class="badge badge-light-red"> c++ </span>
+            <span class="badge badge-ligth-violet"> c# </span>
+            <span class="badge badge-dark-gray"> nodejs </span>
+            <span class="badge badge-aqua-blue"> ffmpeg </span>
+          </div>
+          <p class="card-text mt-lg-3">Se requería realizar una integración de hardware de capturadoras de video a
+            un software que capturara el video y el audio para procesarlo,guardarlo o enviarlo posteriormente a una
+            página.
+            <br><small><a href="">Ver más..</a></small>
+          </p>
+          <div class="text-center">
+            <a href=""  class="btn btn-outline-primary card-button  " data-toggle="modal" data-target="#not_available"  >Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-image col-md-2 text-center mt-lg-0">
+        <img src="images/recorder.png" width="70" alt="recorder">
+      </div>
+    </div>
+    </div>
+
+    <div class="card mb-3" ">
+        <div class=" row no-gutters">
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title mb-0">Sistema de antipassback para control de acceso</h5>
+          <div class="badges">
+            <span class="badge badge-light-green"> python </span>
+            <span class="badge badge-black"> flask </span>
+            <span class="badge badge-aqua-blue"> sqlite </span>
+          </div>
+          <p class="card-text mt-lg-3">Dentro de un sistema de seguridad, un antipassback es un mecanismo que
+            permite el acceso a una área validando si el usuario tiene permitido o no.
+            Los dispositivos que permiten el acceso, deben estar intercomunicados para poder validar en sus bases de
+            datos el tipo de acceso al usuario, la fecha y hora del último acceso y por último si el usuario está
+            ingresando o saliendo.
+            Es por ello que dentro del sistema de múltiples dispositivos de acceso, se implementa el patrón de
+            maestro esclavo dentro del sistema,
+            para que sólo uno de ellos posea
+            el control sobre un área, así mismo para realizar la comunicación entre éste como maestro y las demás
+            (esclavas), se
+            implementó un microservicio para realizar esta funcionalidad.
+            
+          </p>
+          <div class="text-center">
+            <a href=""  class="btn btn-outline-primary card-button  " data-toggle="modal" data-target="#not_available"  >Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-image col-md-2 text-center mt-lg-0">
+        <img src="images/antipassback.png" width="70" alt="antipassback">
+      </div>
+    </div>
+    </div>
+
+    <div class="card mb-3" ">
+        <div class=" row no-gutters">
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title mb-0">Lectoras biométricas de seguridad</h5>
+          <div class="badges">
+            <span class="badge badge-light-red"> c++ </span>
+            <span class="badge badge-light-blue"> c </span>
+            <span class="badge badge-ligth-violet"> bash-shell </span>
+            <span class="badge badge-light-yellow"> glade </span>
+            <span class="badge badge-ligth1-blue"> sqlite </span>
+          </div>
+          <p class="card-text mt-lg-3"> El cliente requería un sistema de seguridad para puertas que
+            tuviese mútliples tipos de acceso convencional y biométrico: huella,iris, facial,tarjeta,pin. <br>
+
+            El dispositivo debía estar vinculado con un sistema que administraba el control de acceso a nivel
+            general : edificios,zonas,grupos de acceso; es por ello que el dispositivo debía contar con
+            algún protocolo de comunicación, control de periféricos externos, acceso a sensores y lectores,
+            además de su propia base de datos. <br>
+            Dado a lo anterior en el dispositivo se integra un software capaz de controlar periféricos, acceso a
+            sensores, con base de datos ligera para un sistema embebido ,un protocolo de comunicación y una interfaz
+            gráfica.
+            
+          </p>
+          <div class="text-center">
+            <a href=""  class="btn btn-outline-primary card-button  " data-toggle="modal" data-target="#not_available"  >Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-image col-md-2 text-center mt-lg-0">
+        <img src="images/biometrico.png" width="70" alt="biometrico">
+      </div>
+    </div>
+    </div>
+
+    <div class="card mb-3" ">
+        <div class=" row no-gutters">
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title mb-0">Robots con visión artificial</h5>
+          <div class="badges">
+            <span class="badge badge-light-green"> python </span>
+            <span class="badge badge-light-yellow"> opencv </span>
+          </div>
+          <p class="card-text mt-lg-3"> Se emplearon dos kits de robótica Bioloid humanoides y el
+            tema de fútbol de robots, para implementar visión artificial en los robots. <br>
+            El campo es evaluado desde una cámara en la parte superior, donde se hace el  reconocimiento
+            visual de color de los robots y la pelota, posteriormente los comandos son enviados vía zigbee
+            para que los robots se desplacen dependiendo de su respectivo rol: arquero o delantero.
+          </p>
+          <div class="text-center">
+            <a href="https://www.youtube.com/watch?v=ITcHHV_uGEo"  class="btn btn-outline-primary card-button  " target="_blank">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-image col-md-2 text-center mt-lg-0">
+        <img src="images/avision.png" width="70" alt="avision">
+      </div>
+    </div>
+    </div>
+
+    <div class="card mb-3" ">
+        <div class=" row no-gutters">
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title mb-0">Automatización planta mezclado aditivos</h5>
+          <div class="badges">
+            <span class="badge badge-light-green"> python </span>
+            <span class="badge badge-dark-pink"> raspberry </span>
+            <span class="badge badge-light-pink"> tkinter </span>
+          </div>
+          <p class="card-text mt-lg-3">Una planta de mezclado de aditivos, requería
+            que sus procesos fueran automáticos, con bajo presupuesto, para que el
+            proceso fuera de menor riesgo posible para el operario. <br>
+            Se implementan sensores electrónicos,actuadores, un tablero de control,motores y válvulas.
+            Todo esto controlado y visualizado desde una interfaz gráfica de una raspberry-pi3.
+            
+          </p>
+          <div class="text-center">
+            <a href="https://github.com/innacroft/Planta_mezclado_aditivos"  class="btn btn-outline-primary card-button  " target="_blank">Ver más</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-image col-md-2 text-center mt-lg-0">
+        <img src="images/process.png" width="70" alt="process">
+      </div>
+    </div>
+    </div>
+
+    </div>
+  </section>
+
+ 
+  <!--tecnologias-->
+  <section id="tecnologias">
+    <div class="container3" >
+      <picture class="tech-image">
+      </picture>
+    </div>
+    <div class="container">
+      <div class="row mt-2 mb-4">
+        <div class="col text-center text-uppercase">
+          <h2>tecnologias</h2>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+          
+          <abbr data-toggle="tooltip" title="python"> <img class="hero-image mr-3 rounded-circle" width="100"
+              height="100" src="images/python.png" alt="python"></abbr>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+          
+          <img class="hero-image mr-3 rounded-circle" width="100" height="100" src="images/cpp.png" alt="c++">
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+          
+          <img class="hero-image mr-3 rounded-circle" width="100" height="100" src="images/c.png" alt="c">
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+          
+          <img class="hero-image mr-3 rounded-circle" width="100" height="100" src="images/csh.jpg" alt="c#">
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+          
+          <abbr data-toggle="tooltip" title="Django"> <img class="hero-image mr-3 rounded-circle" width="100"
+              height="100" src="images/django.webp" alt="django"></abbr>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+          
+          <img class="hero-image mr-3 rounded-circle" width="100" height="100" src="images/flask.jpg" alt="flask">
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+     
+          <abbr data-toggle="tooltip" title="SQlite"><img class="hero-image mr-3 rounded-circle" width="100"
+              height="100" src="images/sqlite.png" alt="sqlite"></abbr>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+         
+          <abbr data-toggle="tooltip" title="MySQL"><img class="hero-image mr-3 rounded-circle" width="100" height="100"
+              src="images/mysql.jpg" alt="mysql"></abbr>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+          
+          <abbr data-toggle="tooltip" title="linux"><img class="hero-image mr-3 rounded-circle" width="100" height="100"
+              src="images/linux.png" alt="linux"></abbr>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+          <abbr data-toggle="tooltip" title="GIT"> <img class="hero-image mr-3 rounded-circle" width="100" height="100"
+              src="images/git.svg" alt="git"></abbr>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+          <abbr data-toggle="tooltip" title="bootstrap"><img class="hero-image mr-3 rounded-circle" width="100"
+              height="100" src="images/bootstrap.png" alt="bootstrap"></abbr>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+          <abbr data-toggle="tooltip" title="css"><img class="hero-image mr-3 rounded-circle" width="100" height="100"
+              src="images/css.png" alt="css"></abbr>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+          <abbr data-toggle="tooltip" title="html"><img class="hero-image mr-3 rounded-circle" width="100" height="100"
+              src="images/html.png" alt="html"></abbr>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+          <abbr data-toggle="tooltip" title="bash-shell scripts"><img class="hero-image mr-3 rounded-circle" width="100"
+              height="100" src="images/command.png" alt="shell-bash , windows scripts"></abbr>
+        </div>
+        <div class="col-6 col-sm-6 col-md-4 col-lg-2 mb-4 text-center">
+          <abbr data-toggle="tooltip" title="opencv"><img class="hero-image mr-3 rounded-circle" width="100"
+              height="100" src="images/opencv.png" alt="opencv"></abbr>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="row ">
+        <div class="col-12 col-md-12 text-center text-uppercase ">
+          <h2>Sobre mi</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="about-card card-body ">Así como dice en el encabezado... me apasiona la tecnología , y si!, me
+              gusta en
+              muchos de sus ámbitos tanto en software como en hardware, me gusta mucho crear cosas,
+              y siempre estoy buscando la posibilidad de hacer más fácil la vida de otros, es por eso que un día
+              decidí estudiar Ingeniería mecatrónica, actualmente soy egresada de la <a
+                href="https://www.unipiloto.edu.co/" target="_blank"> Universidad Piloto de Colombia.</a> <br>
+              En los rumbos de la ingeniería descubrí que siento una atracción mayor al campo del software, y bueno...
+              es por esa razón que actualmente trabajo como desarrolladora.
+              </h4>
+              <div class="row mt-5" id="images_about">
+                <div class="col text-center col-6 col-md-4">
+                  <div class="about_image col mt-lg-4 text">
+                    <img src="images/bombillo.png" alt="bombillo">
+                    <p>Creativa</p>
+                  </div>
+                </div>
+                <div class="col-4 text-center col-6 col-md-4 ">
+                  <div class="about_image col mt-lg-4">
+                    <img src="images/montana.png" alt="montana">
+                    <p>Perseverante</p>
+                  </div>
+                </div>
+                <div class="col text-center col-6 col-md-4">
+                  <div class="about_image col mt-lg-4">
+                    <img src="images/auto.png" alt="autodidacta">
+                    <p>Autodidacta</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    </div>      
+  </section>
+
+ 
+  <div class="container2" >
+    <picture class="footer-image">
+      
+    </picture>
+  </div>
+  <!-------footer----------->
+  <footer id="footer" class="pb-4 pt-4">
+   
+    <div class="container">
+      <div class="row">
+        <div class=" col-12 col-lg-6 text-lg-left col-sm-6">
+          <h3>Ingrid Natalia Rodríguez Ovalle
+          </h3>
+          <a href="mailto:innarov@hotmail.com">innarov@hotmail.com</a> <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="social col-12 col-lg-6 col-sm-6 pt-2">
+          <ul class="navbar-nav text-md-left">
+            <li class="nav-item2 pb-0 pt-0">
+              <a class="nav-link nav_text2" href="#hero"><small>Inicio</small> </a>
+            </li>
+            <li class="nav-item2 pb-0 pt-0">
+              <a class="nav-link nav_text2" href="#proyectos"><small>Proyectos</small> </a>
+            </li>
+            <li class="nav-item2 pb-0 pt-0">
+              <a class="nav-link nav_text2" href="#tecnologias"><small>Tecnologías</small></a>
+            </li>
+            <li class="nav-item2 pb-0 pt-0">
+              <a class="nav-link nav_text2" href="#about"><small>Más sobre mi</small></a>
+            </li>
+            <li class="nav-item2 pb-0 pt-0">
+              <a class="nav-link nav_text2" href="#footer"><small>Contacto</small></a>
+            </li>
+          </ul>
+          <a href="https://www.linkedin.com/in/ingrid-natalia-rodr%C3%ADguez-ovalle-661709120/"
+            class="social-link linked" target="_blank"></a>
+          <a href="https://github.com/innacroft" target="_blank" 
+            class="social-link github"></a>
+        </div>
+        <div class="social2 col-12 col-lg-6 col-sm-6">
+            
+            <img src="images/logo.png" alt="logo">
+          
+            <p>Copyright inna 2020 © <a target="_blank" href="https://github.com/innacroft/portfolio"> <u> Más
+                información</u></a></p>
+             
+          
+        </div>
+        
+
+
+
+
+
+
+      </div>
+
+  </footer>
+<!--modal-->
+<div class="modal fade" id="not_available" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header ">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </div>
+        <div class="modal-body text-center">
+        </button>
+        <img src="images/error.png" width="70" alt="recorder">
+      </div>
+          <p>Este proyecto no se encuentra disponible debido a las políticas de privacidad del repositorio.</p>
+        </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
