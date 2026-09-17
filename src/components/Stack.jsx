@@ -34,7 +34,12 @@ export default function Stack() {
                 </div>
                 <div className="chips">
                   {stage.skills.map((skill) => (
-                    <span className="chip" key={skill}>{skill}</span>
+                    <span
+                      className={`chip ${stage.core.includes(skill) ? 'chip--core' : ''}`}
+                      key={skill}
+                    >
+                      {skill}
+                    </span>
                   ))}
                 </div>
               </div>

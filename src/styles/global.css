@@ -379,6 +379,15 @@ section { position: relative; padding: 110px 0; }
 }
 .chip:hover { color: var(--text); border-color: var(--tone, var(--cyan)); background: var(--surface-2); transform: translateY(-2px); }
 
+/* Las tecnologías que sostienen el día a día van resaltadas: en una lista plana
+   todo pesa igual y no se distingue lo profundo de lo que solo se ha tocado. */
+.chip--core {
+  color: var(--text);
+  border-color: color-mix(in srgb, var(--tone, var(--cyan)) 55%, transparent);
+  background: color-mix(in srgb, var(--tone, var(--cyan)) 12%, transparent);
+  font-weight: 500;
+}
+
 /* ---------- tour dates (experience) ---------- */
 
 .tour { margin-top: 46px; border-top: 1px solid var(--line); }

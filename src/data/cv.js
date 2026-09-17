@@ -127,28 +127,32 @@ export const stages = [
     stage: { en: 'Core backend', es: 'Backend principal' },
     tone: 'magenta',
     note: { en: 'Languages & frameworks', es: 'Lenguajes y frameworks' },
-    skills: ['Python', 'TypeScript', 'FastAPI', 'Flask', 'Django', 'Django REST Framework', 'Frappe', 'REST APIs', 'GraphQL', 'Microservices', 'Software Architecture', 'Distributed Systems'],
+    skills: ['Python', 'TypeScript', 'FastAPI', 'Django / DRF', 'Flask', 'Frappe', 'GraphQL'],
+    core: ['Python', 'FastAPI'],
   },
   {
     id: 'data',
     stage: { en: 'Data & storage', es: 'Datos y almacenamiento' },
     tone: 'cyan',
-    note: { en: 'Pipelines & databases', es: 'Pipelines y bases de datos' },
-    skills: ['Palantir Foundry', 'Data Pipelines', 'Datasets', 'PostgreSQL', 'MariaDB', 'MongoDB', 'MySQL', 'SQLite', 'SQL', 'SQLAlchemy', 'Redis'],
+    note: { en: 'Databases & pipelines', es: 'Bases de datos y pipelines' },
+    skills: ['PostgreSQL', 'MongoDB', 'MySQL / MariaDB', 'Redis', 'SQLAlchemy', 'Palantir Foundry'],
+    core: ['PostgreSQL'],
   },
   {
     id: 'cloud',
-    stage: { en: 'Cloud & DevOps', es: 'Cloud y DevOps' },
+    stage: { en: 'Async & infrastructure', es: 'Asincronía e infraestructura' },
     tone: 'violet',
     note: { en: 'Ship & scale', es: 'Desplegar y escalar' },
-    skills: ['Docker', 'Kubernetes', 'ArgoCD', 'AWS Lambda', 'Amazon S3', 'Amazon SQS', 'DynamoDB', 'RabbitMQ', 'Celery', 'Linux'],
+    skills: ['Celery', 'RabbitMQ', 'Docker', 'Kubernetes', 'ArgoCD', 'AWS · Lambda · S3 · SQS · DynamoDB'],
+    core: ['Celery', 'RabbitMQ', 'Kubernetes'],
   },
   {
     id: 'ops',
     stage: { en: 'Quality & observability', es: 'Calidad y observabilidad' },
     tone: 'acid',
     note: { en: 'Testing, monitoring, AI tooling', es: 'Pruebas, monitoreo, herramientas de IA' },
-    skills: ['Grafana', 'Prometheus', 'Loki', 'Pytest', 'Jest', 'Unit & Integration Testing', 'BDD', 'Cursor AI', 'Claude', 'GitHub Copilot', 'Prompt Engineering'],
+    skills: ['Pytest', 'Jest', 'Grafana', 'Prometheus', 'Loki', 'Claude / Cursor'],
+    core: ['Pytest', 'Grafana'],
   },
 ]
 
@@ -309,7 +313,7 @@ export const languages = [
       en: 'Professional working proficiency (B1)',
       es: 'Competencia profesional (B1)',
     },
-    value: 65,
+    value: 80,
   },
 ]
 
