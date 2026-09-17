@@ -1,95 +1,153 @@
+// Contenido del portafolio. Todo string traducible es { en, es };
+// lo demás (URLs, logos, nombres de tecnologías) es igual en ambos idiomas.
+
 export const profile = {
   name: 'Ingrid Natalia',
   lastName: 'Rodríguez Ovalle',
   shortName: 'Inna',
-  role: 'Backend Engineer',
-  tagline: ['Python', 'APIs', 'Architecture', 'Fintech', 'Retail'],
-  location: 'Bogotá, Colombia',
+  role: { en: 'Backend Engineer', es: 'Backend Engineer' },
+  tagline: {
+    en: ['Python', 'APIs', 'Architecture', 'Fintech', 'Retail'],
+    es: ['Python', 'APIs', 'Arquitectura', 'Fintech', 'Retail'],
+  },
+  headline: {
+    en: 'Backend Engineer — 5+ years building scalable APIs and optimizing critical systems for retail, logistics and fintech.',
+    es: 'Backend Engineer — más de 5 años construyendo APIs escalables y optimizando sistemas críticos para retail, logística y fintech.',
+  },
+  location: { en: 'Bogotá, Colombia', es: 'Bogotá, Colombia' },
   email: 'innarov@hotmail.com',
   github: 'https://github.com/innacroft',
   linkedin: 'https://www.linkedin.com/in/ingrid-natalia-rodríguez-ovalle-661709120/',
-  summary: [
-    'Backend Engineer with 5+ years of experience building scalable APIs and optimizing critical systems in retail and fintech, using Python and TypeScript.',
-    'Experienced in cloud-native architectures, asynchronous processing, API integrations, relational and NoSQL databases, containerized environments and DevOps practices. Strong background in software architecture and system design for retail, logistics and fintech.',
-    'Specialist in asynchronous processing and critical system optimization for retail and fintech, focused on reducing operational load and ensuring high availability. I use AI-driven workflows (Claude, Cursor) to accelerate architecture, documentation and debugging.',
-  ],
+  summary: {
+    en: [
+      'Backend Engineer with 5+ years of experience building scalable APIs and optimizing critical systems in retail and fintech, using Python and TypeScript.',
+      'Experienced in cloud-native architectures, asynchronous processing, API integrations, relational and NoSQL databases, containerized environments and DevOps practices. Strong background in software architecture and system design.',
+      'Specialist in asynchronous processing and critical system optimization, focused on reducing operational load and ensuring high availability. I use AI-driven workflows (Claude, Cursor) to accelerate architecture, documentation and debugging.',
+    ],
+    es: [
+      'Backend Engineer con más de 5 años de experiencia construyendo APIs escalables y optimizando sistemas críticos en retail y fintech, con Python y TypeScript.',
+      'Experiencia en arquitecturas cloud-native, procesamiento asíncrono, integración de APIs, bases de datos relacionales y NoSQL, entornos contenerizados y prácticas DevOps. Base sólida en arquitectura de software y diseño de sistemas.',
+      'Especialista en procesamiento asíncrono y optimización de sistemas críticos, enfocada en reducir carga operativa y garantizar alta disponibilidad. Uso flujos asistidos por IA (Claude, Cursor) para acelerar arquitectura, documentación y depuración.',
+    ],
+  },
 }
 
 export const stats = [
-  { value: '18,500+', label: 'Packages/year automated through carrier APIs' },
-  { value: '40%', label: 'Fewer manual errors after the integration' },
-  { value: '45,000+', label: 'Cart additions in a year via the 3D planner' },
+  {
+    value: '18,500+',
+    label: {
+      en: 'Packages/year automated through carrier APIs',
+      es: 'Paquetes/año automatizados vía APIs de paqueterías',
+    },
+  },
+  {
+    value: '40%',
+    label: {
+      en: 'Fewer manual errors after the integration',
+      es: 'Menos errores manuales tras la integración',
+    },
+  },
+  {
+    value: '45,000+',
+    label: {
+      en: 'Cart additions in a year via the 3D planner',
+      es: 'Adiciones al carrito en un año con el planificador 3D',
+    },
+  },
 ]
 
-// Casos con impacto medible. Las cifras vienen del CV en inglés (versión larga).
 export const cases = [
   {
     metric: '18,500+',
-    unit: 'packages / year',
-    title: 'Carrier API integration lead',
+    unit: { en: 'packages / year', es: 'paquetes / año' },
+    title: { en: 'Carrier API integration lead', es: 'Líder de integración con paqueterías' },
     tone: 'cyan',
-    body: 'Led the API integration of logistics providers across México and Brasil — FedEx, Estafeta, J&T Express and others — behind a single internal interface. Label generation, tracking and pickup stopped being manual work.',
-    impact: [
-      '40% fewer manual errors',
-      '≈ 420 manual work hours/month cut in Brasil (first six months)',
-      'Carriers for México and Brasil behind one internal interface',
-    ],
+    body: {
+      en: 'Led the API integration of logistics providers across México and Brasil — FedEx, Estafeta, J&T Express and others — behind a single internal interface. Label generation, tracking and pickup stopped being manual work.',
+      es: 'Lideré la integración de las APIs de paqueterías en México y Brasil —FedEx, Estafeta, J&T Express y otras— detrás de una sola interfaz interna. La generación de guías, el rastreo y las recolecciones dejaron de ser trabajo manual.',
+    },
+    impact: {
+      en: [
+        '40% fewer manual errors',
+        '≈ 420 manual work hours/month cut in Brasil (first six months)',
+        'Carriers for México and Brasil behind one internal interface',
+      ],
+      es: [
+        '40% menos errores manuales',
+        '≈ 420 horas de trabajo manual/mes eliminadas en Brasil (primeros seis meses)',
+        'Paqueterías de México y Brasil bajo una sola interfaz interna',
+      ],
+    },
     tags: ['Python', 'FastAPI', 'REST APIs', 'Celery', 'RabbitMQ'],
   },
   {
     metric: '45,000+',
-    unit: 'cart additions / year',
-    title: '3D planner for e-commerce',
+    unit: { en: 'cart additions / year', es: 'adiciones al carrito / año' },
+    title: { en: '3D planner for e-commerce', es: 'Planificador 3D para e-commerce' },
     tone: 'magenta',
-    body: 'Backend for a 3D space planner integrated with Planner Studio, letting customers lay out a room before buying.',
-    impact: [
-      '45,000+ cart additions in a year',
-      'Live and converting within 13 days of launch',
-    ],
+    body: {
+      en: 'Backend for a 3D space planner integrated with Planner Studio, letting customers lay out a room before buying.',
+      es: 'Backend de un planificador de espacios en 3D integrado con Planner Studio, que permite a los clientes distribuir una habitación antes de comprar.',
+    },
+    impact: {
+      en: ['45,000+ cart additions in a year', 'Live and converting within 13 days of launch'],
+      es: [
+        '45,000+ adiciones al carrito en un año',
+        'En producción y convirtiendo a los 13 días del lanzamiento',
+      ],
+    },
     tags: ['Python', 'REST APIs', 'PostgreSQL'],
   },
   {
     metric: '33,000+',
-    unit: 'new users / year',
-    title: 'Auth at scale & internal tooling',
+    unit: { en: 'new users / year', es: 'usuarios nuevos / año' },
+    title: { en: 'Auth at scale & internal tooling', es: 'Autenticación a escala y herramientas internas' },
     tone: 'violet',
-    body: 'Helped build a scalable authentication system and an internal reviews manager, plus performance work on high-traffic APIs during peak events like Buen Fin.',
-    impact: [
-      '33,000+ new users/year through the auth system',
-      'Internal reviews manager replaced recurring manual work',
-    ],
+    body: {
+      en: 'Helped build a scalable authentication system and an internal reviews manager, plus performance work on high-traffic APIs during peak events like Buen Fin.',
+      es: 'Participé en un sistema de autenticación escalable y un gestor interno de reseñas, además de optimizar APIs de alto tráfico en picos como el Buen Fin.',
+    },
+    impact: {
+      en: [
+        '33,000+ new users/year through the auth system',
+        'Internal reviews manager replaced recurring manual work',
+      ],
+      es: [
+        '33,000+ usuarios nuevos/año por el sistema de autenticación',
+        'El gestor de reseñas reemplazó trabajo manual recurrente',
+      ],
+    },
     tags: ['FastAPI', 'Flask', 'Kubernetes', 'Grafana', 'Prometheus'],
   },
 ]
 
-
 export const stages = [
   {
     id: 'core',
-    stage: 'Core backend',
+    stage: { en: 'Core backend', es: 'Backend principal' },
     tone: 'magenta',
-    note: 'Languages & frameworks',
+    note: { en: 'Languages & frameworks', es: 'Lenguajes y frameworks' },
     skills: ['Python', 'TypeScript', 'FastAPI', 'Flask', 'Django', 'Django REST Framework', 'Frappe', 'REST APIs', 'GraphQL', 'Microservices', 'Software Architecture', 'Distributed Systems'],
   },
   {
     id: 'data',
-    stage: 'Data & storage',
+    stage: { en: 'Data & storage', es: 'Datos y almacenamiento' },
     tone: 'cyan',
-    note: 'Pipelines & databases',
+    note: { en: 'Pipelines & databases', es: 'Pipelines y bases de datos' },
     skills: ['Palantir Foundry', 'Data Pipelines', 'Datasets', 'PostgreSQL', 'MariaDB', 'MongoDB', 'MySQL', 'SQLite', 'SQL', 'SQLAlchemy', 'Redis'],
   },
   {
     id: 'cloud',
-    stage: 'Cloud & DevOps',
+    stage: { en: 'Cloud & DevOps', es: 'Cloud y DevOps' },
     tone: 'violet',
-    note: 'Ship & scale',
+    note: { en: 'Ship & scale', es: 'Desplegar y escalar' },
     skills: ['Docker', 'Kubernetes', 'ArgoCD', 'AWS Lambda', 'Amazon S3', 'Amazon SQS', 'DynamoDB', 'RabbitMQ', 'Celery', 'Linux'],
   },
   {
     id: 'ops',
-    stage: 'Quality & observability',
+    stage: { en: 'Quality & observability', es: 'Calidad y observabilidad' },
     tone: 'acid',
-    note: 'Testing, monitoring, AI tooling',
+    note: { en: 'Testing, monitoring, AI tooling', es: 'Pruebas, monitoreo, herramientas IA' },
     skills: ['Grafana', 'Prometheus', 'Loki', 'Pytest', 'Jest', 'Unit & Integration Testing', 'BDD', 'Cursor AI', 'Claude', 'GitHub Copilot', 'Prompt Engineering'],
   },
 ]
@@ -97,100 +155,162 @@ export const stages = [
 export const experience = [
   {
     company: 'Zebrands',
-    role: 'Backend Engineer',
-    period: 'Oct 2021 — Present',
+    role: { en: 'Backend Engineer', es: 'Backend Engineer' },
+    period: { en: 'Oct 2021 — Present', es: 'Oct 2021 — Actualidad' },
     year: '2021',
-    place: 'Remote',
     current: true,
     tags: ['Python', 'FastAPI', 'TypeScript', 'Kubernetes', 'Palantir Foundry'],
-    bullets: [
-      'Logistics integration lead: led the API integration of carriers for México and Brasil (FedEx, Estafeta, J&T Express and others), automating 18,500+ packages/year, cutting manual errors by 40% and removing ≈ 420 manual work hours/month in Brasil during the first six months.',
-      'E-commerce innovation: developed a 3D planner integrated with Planner Studio, live and converting within 13 days of launch and reaching 45,000+ cart additions in a year.',
-      'System stability: helped build a scalable authentication system (33,000+ new users/year) and an internal reviews manager that replaced recurring manual work.',
-      'Performance: optimized high-traffic APIs with FastAPI and Flask, using Celery and RabbitMQ for heavy asynchronous workloads during peak events like Buen Fin.',
-      'AI-enhanced workflow: integrated Claude into the engineering cycle for rapid prototyping, automated documentation (ADRs) and system design, reducing planning time and accelerating delivery.',
-      'Designed and optimized PostgreSQL, MariaDB and MongoDB databases; containerized services with Docker and deployed through Kubernetes and ArgoCD.',
-      'Improved observability with Grafana, Prometheus and Loki, and built automated tests with Pytest and Jest.',
-      'Designed data pipelines, datasets and business logic in Palantir Foundry to support B2B operations.',
-    ],
+    bullets: {
+      en: [
+        'Logistics integration lead: led the API integration of carriers for México and Brasil (FedEx, Estafeta, J&T Express and others), automating 18,500+ packages/year, cutting manual errors by 40% and removing ≈ 420 manual work hours/month in Brasil during the first six months.',
+        'E-commerce innovation: developed a 3D planner integrated with Planner Studio, live and converting within 13 days of launch and reaching 45,000+ cart additions in a year.',
+        'System stability: helped build a scalable authentication system (33,000+ new users/year) and an internal reviews manager that replaced recurring manual work.',
+        'Performance: optimized high-traffic APIs with FastAPI and Flask, using Celery and RabbitMQ for heavy asynchronous workloads during peak events like Buen Fin.',
+        'AI-enhanced workflow: integrated Claude into the engineering cycle for rapid prototyping, automated documentation (ADRs) and system design, reducing planning time and accelerating delivery.',
+        'Designed and optimized PostgreSQL, MariaDB and MongoDB databases; containerized services with Docker and deployed through Kubernetes and ArgoCD.',
+        'Improved observability with Grafana, Prometheus and Loki, and built automated tests with Pytest and Jest.',
+        'Designed data pipelines, datasets and business logic in Palantir Foundry to support B2B operations.',
+      ],
+      es: [
+        'Líder de integración logística: dirigí la integración de las APIs de paqueterías para México y Brasil (FedEx, Estafeta, J&T Express y otras), automatizando más de 18,500 paquetes/año, reduciendo 40% los errores manuales y eliminando ≈ 420 horas de trabajo manual/mes en Brasil durante los primeros seis meses.',
+        'Innovación en e-commerce: desarrollé un planificador 3D integrado con Planner Studio, en producción y convirtiendo a los 13 días del lanzamiento, con más de 45,000 adiciones al carrito en un año.',
+        'Estabilidad del sistema: participé en un sistema de autenticación escalable (33,000+ usuarios nuevos/año) y en un gestor interno de reseñas que reemplazó trabajo manual recurrente.',
+        'Rendimiento: optimicé APIs de alto tráfico con FastAPI y Flask, usando Celery y RabbitMQ para cargas asíncronas pesadas en picos como el Buen Fin.',
+        'Flujo asistido por IA: integré Claude al ciclo de ingeniería para prototipado rápido, documentación automatizada (ADRs) y diseño de sistemas, reduciendo el tiempo de planeación y acelerando la entrega.',
+        'Diseñé y optimicé bases de datos PostgreSQL, MariaDB y MongoDB; contenericé servicios con Docker y desplegué con Kubernetes y ArgoCD.',
+        'Mejoré la observabilidad con Grafana, Prometheus y Loki, y construí pruebas automatizadas con Pytest y Jest.',
+        'Diseñé pipelines de datos, datasets y lógica de negocio en Palantir Foundry para soportar operaciones B2B.',
+      ],
+    },
   },
   {
     company: 'MO Credit Management Platform',
-    role: 'Backend Engineer',
-    period: 'Feb 2021 — Oct 2021',
+    role: { en: 'Backend Engineer', es: 'Backend Engineer' },
+    period: { en: 'Feb 2021 — Oct 2021', es: 'Feb 2021 — Oct 2021' },
     year: '2021',
-    place: 'Colombia',
     tags: ['Django', 'AWS', 'Fintech', 'BEES · AB InBev'],
-    bullets: [
-      'Developed backend features for BEES (AB InBev), focusing on credit processing and financial operations for small businesses.',
-      'Implemented core business logic for credit verification and internal financial reporting.',
-      'Ensured system reliability through unit testing and reproducible Docker environments.',
-      'Worked with AWS Lambda, Amazon S3, Amazon SQS and DynamoDB; managed PostgreSQL databases.',
-    ],
+    bullets: {
+      en: [
+        'Developed backend features for BEES (AB InBev), focusing on credit processing and financial operations for small businesses.',
+        'Implemented core business logic for credit verification and internal financial reporting.',
+        'Ensured system reliability through unit testing and reproducible Docker environments.',
+        'Worked with AWS Lambda, Amazon S3, Amazon SQS and DynamoDB; managed PostgreSQL databases.',
+      ],
+      es: [
+        'Desarrollé funcionalidades backend para BEES (AB InBev), enfocadas en procesamiento de crédito y operaciones financieras para pequeños negocios.',
+        'Implementé la lógica de negocio para verificación de crédito y reportes financieros internos.',
+        'Garanticé la confiabilidad del sistema con pruebas unitarias y entornos Docker reproducibles.',
+        'Trabajé con AWS Lambda, Amazon S3, Amazon SQS y DynamoDB; administré bases de datos PostgreSQL.',
+      ],
+    },
   },
   {
     company: 'A&A Soluciones TIC',
-    role: 'Python Engineer',
-    period: 'Jun 2020 — Feb 2021',
+    role: { en: 'Python Engineer', es: 'Ingeniera Python' },
+    period: { en: 'Jun 2020 — Feb 2021', es: 'Jun 2020 — Feb 2021' },
     year: '2020',
-    place: 'Colombia',
     tags: ['Django', 'DRF', 'Fintech', 'Healthcare'],
-    bullets: [
-      'Built backend functionality with Django and Django REST Framework for fintech and healthcare (Watoko).',
-      'Winner of Avaya’s CPaaS Hackathon with a virtual wallet solution.',
-      'Implemented asynchronous processing with Celery and RabbitMQ, and maintained PostgreSQL databases.',
-    ],
+    bullets: {
+      en: [
+        'Built backend functionality with Django and Django REST Framework for fintech and healthcare (Watoko).',
+        'Winner of Avaya’s CPaaS Hackathon with a virtual wallet solution.',
+        'Implemented asynchronous processing with Celery and RabbitMQ, and maintained PostgreSQL databases.',
+      ],
+      es: [
+        'Construí funcionalidad backend con Django y Django REST Framework para fintech y salud (Watoko).',
+        'Ganadora del Hackathon CPaaS de Avaya con una solución de billetera virtual.',
+        'Implementé procesamiento asíncrono con Celery y RabbitMQ, y mantuve bases de datos PostgreSQL.',
+      ],
+    },
   },
   {
     company: 'Robotec Colombia',
-    role: 'Embedded Developer',
-    period: 'Jan 2018 — Dec 2019',
+    role: { en: 'Embedded Developer', es: 'Desarrolladora de sistemas embebidos' },
+    period: { en: 'Jan 2018 — Dec 2019', es: 'Ene 2018 — Dic 2019' },
     year: '2018',
-    place: 'Colombia',
     tags: ['C++', 'C#', 'Embedded', 'Biometrics'],
-    bullets: [
-      'Developed firmware in C++ and C# for biometric devices used by government entities (IGAC, Council of State).',
-      'Integrated HID SDKs for secure identity validation and hardware-software synchronization.',
-      'Produced technical documentation and worked with SQL and SQLite databases.',
-    ],
+    bullets: {
+      en: [
+        'Developed firmware in C++ and C# for biometric devices used by government entities (IGAC, Council of State).',
+        'Integrated HID SDKs for secure identity validation and hardware-software synchronization.',
+        'Produced technical documentation and worked with SQL and SQLite databases.',
+      ],
+      es: [
+        'Desarrollé firmware en C++ y C# para dispositivos biométricos usados por entidades del Estado (IGAC, Consejo de Estado).',
+        'Integré SDKs de HID para validación segura de identidad y sincronización hardware-software.',
+        'Elaboré documentación técnica y trabajé con bases de datos SQL y SQLite.',
+      ],
+    },
   },
 ]
 
 export const brands = [
-  { name: 'Luuna', niche: 'Retail', country: 'México', url: 'https://luuna.mx', logo: './logos/luuna.svg' },
-  { name: 'Luuna', niche: 'Retail', country: 'Brasil', url: 'https://www.luuna.com.br', logo: './logos/luuna.svg' },
-  { name: 'Nooz', niche: 'Retail', country: 'México', url: 'https://nooz.mx', logo: './logos/nooz.png' },
-  { name: 'Mappa', niche: 'Retail', country: 'México', url: 'https://mappa.mx', logo: './logos/mappa.png' },
-  { name: 'Mo', niche: 'Fintech', country: 'Colombia', url: 'https://www.wearemo.com', logo: './logos/mo.svg' },
-  { name: 'Aiatic', niche: 'Custom software development', country: 'Colombia', url: 'https://aiatic.solutions', logo: './logos/aiatic.png' },
+  { name: 'Luuna', niche: { en: 'Retail', es: 'Retail' }, country: { en: 'Mexico', es: 'México' }, url: 'https://luuna.mx', logo: './logos/luuna.svg' },
+  { name: 'Luuna', niche: { en: 'Retail', es: 'Retail' }, country: { en: 'Brazil', es: 'Brasil' }, url: 'https://www.luuna.com.br', logo: './logos/luuna.svg' },
+  { name: 'Nooz', niche: { en: 'Retail', es: 'Retail' }, country: { en: 'Mexico', es: 'México' }, url: 'https://nooz.mx', logo: './logos/nooz.png' },
+  { name: 'Mappa', niche: { en: 'Retail', es: 'Retail' }, country: { en: 'Mexico', es: 'México' }, url: 'https://mappa.mx', logo: './logos/mappa.png' },
+  { name: 'Mo', niche: { en: 'Fintech', es: 'Fintech' }, country: { en: 'Colombia', es: 'Colombia' }, url: 'https://www.wearemo.com', logo: './logos/mo.svg' },
+  { name: 'Aiatic', niche: { en: 'Custom software development', es: 'Software a la medida' }, country: { en: 'Colombia', es: 'Colombia' }, url: 'https://aiatic.solutions', logo: './logos/aiatic.png' },
 ]
 
-// Integraciones con paqueterías. El link va al portal de desarrolladores cuando existe.
 export const apis = [
-  { name: 'FedEx', note: 'Logistics · México · Brasil', url: 'https://developer.fedex.com', logo: './logos/fedex.png', linkLabel: 'Developer portal' },
-  { name: 'Estafeta', note: 'Logistics · México', url: 'https://wscatalogportal.estafeta.com/', logo: './logos/estafeta.svg', linkLabel: 'API docs' },
-  { name: 'Platinum Log', note: 'Logistics · Brasil', url: 'https://www.tpl.com.br/', logo: './logos/platinum.png', linkLabel: 'Official site' },
-  { name: 'J&T Express', note: 'Logistics · México · Brasil', url: 'https://www.jtexpress.mx/', wordmark: 'J&T Express', linkLabel: 'Official site' },
-  { name: 'Yotpo', note: 'Reviews & loyalty', url: 'https://apidocs.yotpo.com/', logo: './logos/yotpo.svg', linkLabel: 'API docs' },
-  { name: 'Twilio', note: 'Messaging', url: 'https://www.twilio.com/docs', logo: './logos/twilio.svg', linkLabel: 'Developer docs' },
-  // Pandi Web usa su nombre en texto como logo, no tiene wordmark en imagen.
-  { name: 'Pandi Web', note: '3D configurators · Dinamarca', url: 'https://pandiweb.dk/', wordmark: 'Pandi Web', linkLabel: 'Official site' },
+  { name: 'FedEx', url: 'https://developer.fedex.com', logo: './logos/fedex.png', linkLabel: { en: 'Developer portal', es: 'Portal de desarrolladores' } },
+  { name: 'Estafeta', url: 'https://wscatalogportal.estafeta.com/', logo: './logos/estafeta.svg', linkLabel: { en: 'API docs', es: 'Documentación de API' } },
+  { name: 'Platinum Log', url: 'https://www.tpl.com.br/', logo: './logos/platinum.png', linkLabel: { en: 'Official site', es: 'Sitio oficial' } },
+  { name: 'J&T Express', url: 'https://www.jtexpress.mx/', wordmark: 'J&T Express', linkLabel: { en: 'Official site', es: 'Sitio oficial' } },
+  { name: 'Yotpo', url: 'https://apidocs.yotpo.com/', logo: './logos/yotpo.svg', linkLabel: { en: 'API docs', es: 'Documentación de API' } },
+  { name: 'Twilio', url: 'https://www.twilio.com/docs', logo: './logos/twilio.svg', linkLabel: { en: 'Developer docs', es: 'Documentación técnica' } },
+  { name: 'Pandi Web', url: 'https://pandiweb.dk/', wordmark: 'Pandi Web', linkLabel: { en: 'Official site', es: 'Sitio oficial' } },
 ]
 
 export const education = [
-  { title: 'Software Architecture Diploma', org: 'Universidad de La Sabana', year: 'Nov 2025' },
-  { title: "Bachelor's Degree in Mechatronics Engineering", org: 'Universidad Piloto de Colombia', year: '2012 — 2017' },
+  {
+    title: { en: 'Software Architecture Diploma', es: 'Diplomado en Arquitectura de Software' },
+    org: 'Universidad de La Sabana',
+    year: { en: 'Nov 2025', es: 'Nov 2025' },
+  },
+  {
+    title: { en: "Bachelor's Degree in Mechatronics Engineering", es: 'Ingeniería Mecatrónica' },
+    org: 'Universidad Piloto de Colombia',
+    year: { en: '2012 — 2017', es: '2012 — 2017' },
+  },
 ]
 
 export const certifications = [
-  { title: 'Winner — Avaya CPaaS Hackathon (virtual wallet solution)', org: 'Avaya' },
-  { title: 'Using Python to Interact with the Operating System', org: 'Google' },
-  { title: 'Crash Course on Python', org: 'Google' },
+  {
+    title: {
+      en: 'Winner — Avaya CPaaS Hackathon (virtual wallet solution)',
+      es: 'Ganadora — Hackathon CPaaS de Avaya (billetera virtual)',
+    },
+    org: 'Avaya',
+  },
+  {
+    title: {
+      en: 'Using Python to Interact with the Operating System',
+      es: 'Using Python to Interact with the Operating System',
+    },
+    org: 'Google',
+  },
+  {
+    title: { en: 'Crash Course on Python', es: 'Crash Course on Python' },
+    org: 'Google',
+  },
 ]
 
 export const languages = [
-  { name: 'Spanish', level: 'Native', value: 100 },
-  { name: 'English', level: 'Professional Working Proficiency (B1)', value: 65 },
+  {
+    name: { en: 'Spanish', es: 'Español' },
+    level: { en: 'Native', es: 'Nativo' },
+    value: 100,
+  },
+  {
+    name: { en: 'English', es: 'Inglés' },
+    level: {
+      en: 'Professional working proficiency (B1)',
+      es: 'Competencia profesional de trabajo (B1)',
+    },
+    value: 65,
+  },
 ]
 
 export const marquee = [

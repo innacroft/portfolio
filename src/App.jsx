@@ -1,3 +1,4 @@
+import { I18nProvider } from './i18n/index.jsx'
 import Ambience from './components/Ambience.jsx'
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
@@ -13,7 +14,7 @@ import Footer from './components/Footer.jsx'
 
 export default function App() {
   return (
-    <>
+    <I18nProvider>
       <Ambience />
       <div className="app">
         <Nav />
@@ -30,6 +31,6 @@ export default function App() {
         </main>
         <Footer />
       </div>
-    </>
+    </I18nProvider>
   )
 }

@@ -1,30 +1,34 @@
 import { motion } from 'framer-motion'
 import Reveal from './Reveal.jsx'
 import { languages, profile } from '../data/cv.js'
+import { useI18n } from '../i18n/index.jsx'
+import { ui } from '../i18n/ui.js'
 
 export default function About() {
+  const { t } = useI18n()
+
   return (
     <section id="about">
       <div className="container">
         <div className="about__grid">
           <Reveal className="about__body">
-            <span className="eyebrow">About</span>
+            <span className="eyebrow">{t(ui.about.eyebrow)}</span>
             <h2 className="section-title">
-              A bit <span className="gradient-text">about me</span>
+              {t(ui.about.titleA)} <span className="gradient-text">{t(ui.about.titleB)}</span>
             </h2>
-            {profile.summary.map((p) => (
+            {t(profile.summary).map((p) => (
               <p key={p.slice(0, 32)}>{p}</p>
             ))}
           </Reveal>
 
           <Reveal delay={0.12}>
             <div className="card about__panel">
-              <h4>Languages</h4>
+              <h4>{t(ui.about.languages)}</h4>
               {languages.map((lang, i) => (
-                <div className="lang" key={lang.name}>
+                <div className="lang-row" key={lang.value}>
                   <div className="lang__top">
-                    <span className="lang__name">{lang.name}</span>
-                    <span className="lang__level">{lang.level}</span>
+                    <span className="lang__name">{t(lang.name)}</span>
+                    <span className="lang__level">{t(lang.level)}</span>
                   </div>
                   <div className="lang__bar">
                     <motion.div
@@ -38,10 +42,9 @@ export default function About() {
                 </div>
               ))}
 
-              <h4 style={{ marginTop: 30 }}>Currently</h4>
+              <h4 style={{ marginTop: 30 }}>{t(ui.about.currently)}</h4>
               <p style={{ color: 'var(--text-dim)', fontSize: '0.94rem' }}>
-                Backend engineer at Zebrands, building services and data pipelines that keep
-                retail and logistics operations running.
+                {t(ui.about.currentlyText)}
               </p>
             </div>
           </Reveal>

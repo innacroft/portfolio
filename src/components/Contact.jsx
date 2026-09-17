@@ -1,21 +1,23 @@
 import { Github, Linkedin, Mail } from 'lucide-react'
 import Reveal from './Reveal.jsx'
 import { profile } from '../data/cv.js'
+import { useI18n } from '../i18n/index.jsx'
+import { ui } from '../i18n/ui.js'
 
 export default function Contact() {
+  const { t } = useI18n()
+
   return (
     <section id="contact" className="contact">
       <div className="container">
         <Reveal>
           <div className="card contact__card">
-            <span className="eyebrow">Get in touch</span>
+            <span className="eyebrow">{t(ui.contact.eyebrow)}</span>
             <h2 className="contact__title">
-              Let&apos;s build <span className="gradient-text">something solid</span>
+              {t(ui.contact.titleA)}{' '}
+              <span className="gradient-text">{t(ui.contact.titleB)}</span>
             </h2>
-            <p className="contact__lead">
-              Open to backend and platform roles where clean architecture and reliable systems
-              actually matter. Say hi — I answer fast.
-            </p>
+            <p className="contact__lead">{t(ui.contact.lead)}</p>
 
             <div className="contact__actions">
               <a className="btn btn--primary" href={`mailto:${profile.email}`}>

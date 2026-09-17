@@ -1,17 +1,30 @@
 import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
+import { useI18n } from '../i18n/index.jsx'
+import { ui } from '../i18n/ui.js'
 
 const LINKS = [
-  { id: 'cases', label: 'Impact' },
-  { id: 'about', label: 'About' },
-  { id: 'stack', label: 'Stack' },
-  { id: 'tour', label: 'Experience' },
-  { id: 'brands', label: 'Brands' },
-  { id: 'credentials', label: 'Credentials' },
-  { id: 'contact', label: 'Contact' },
+  { id: 'cases', key: 'impact' },
+  { id: 'about', key: 'about' },
+  { id: 'stack', key: 'stack' },
+  { id: 'tour', key: 'experience' },
+  { id: 'brands', key: 'brands' },
+  { id: 'credentials', key: 'credentials' },
+  { id: 'contact', key: 'contact' },
 ]
 
+function LangToggle({ lang, toggle, t }) {
+  return (
+    <button className="lang" onClick={toggle} aria-label={t(ui.nav.switchTo)} title={t(ui.nav.switchTo)}>
+      <span className={lang === 'en' ? 'lang__on' : ''}>EN</span>
+      <span className="lang__sep" aria-hidden="true" />
+      <span className={lang === 'es' ? 'lang__on' : ''}>ES</span>
+    </button>
+  )
+}
+
 export default function Nav() {
+  const { t, lang, toggle } = useI18n()
   const [stuck, setStuck] = useState(false)
   const [open, setOpen] = useState(false)
   const [active, setActive] = useState('')
@@ -43,7 +56,7 @@ export default function Nav() {
     <header className={`nav ${stuck ? 'nav--stuck' : ''}`}>
       <div className="container">
         <div className="nav__inner">
-          <a href="#top" className="brand" aria-label="Back to top">
+          <a href="#top" className="brand" aria-label={t(ui.nav.backToTop)}>
             <span className="brand__mark">IR</span>
             <span className="brand__text">
               inna<span>.dev</span>
@@ -57,25 +70,28 @@ export default function Nav() {
                 href={`#${link.id}`}
                 className={`nav__link ${active === link.id ? 'nav__link--active' : ''}`}
               >
-                {link.label}
+                {t(ui.nav[link.key])}
               </a>
             ))}
           </nav>
 
-          <button
-            className="nav__toggle"
-            onClick={() => setOpen((v) => !v)}
-            aria-label={open ? 'Close menu' : 'Open menu'}
-            aria-expanded={open}
-          >
-            {open ? <X size={18} /> : <Menu size={18} />}
-          </button>
+          <div className="nav__right">
+            <LangToggle lang={lang} toggle={toggle} t={t} />
+            <button
+              className="nav__toggle"
+              onClick={() => setOpen((v) => !v)}
+              aria-label={open ? t(ui.nav.closeMenu) : t(ui.nav.openMenu)}
+              aria-expanded={open}
+            >
+              {open ? <X size={18} /> : <Menu size={18} />}
+            </button>
+          </div>
         </div>
 
         <nav className={`nav__mobile ${open ? 'open' : ''}`}>
           {LINKS.map((link) => (
             <a key={link.id} href={`#${link.id}`} onClick={() => setOpen(false)}>
-              {link.label}
+              {t(ui.nav[link.key])}
             </a>
           ))}
         </nav>

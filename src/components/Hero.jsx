@@ -1,11 +1,15 @@
 import { motion } from 'framer-motion'
 import { ArrowDownRight, Mail, MapPin } from 'lucide-react'
 import { profile, stats } from '../data/cv.js'
+import { useI18n } from '../i18n/index.jsx'
+import { ui } from '../i18n/ui.js'
 
 const BARS = [0.9, 0.35, 0.65, 1, 0.5, 0.8, 0.28, 0.72, 0.45]
 const STAT_COLORS = ['var(--cyan)', 'var(--violet)', 'var(--magenta)']
 
 export default function Hero() {
+  const { t } = useI18n()
+
   return (
     <section className="hero" id="top">
       <div className="container">
@@ -17,8 +21,8 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
           >
             <span className="live-dot" />
-            {profile.location}
-            <b>Open to work</b>
+            {t(profile.location)}
+            <b>{t(ui.hero.openToWork)}</b>
           </motion.div>
 
           <motion.h1
@@ -47,32 +51,29 @@ export default function Hero() {
                   />
                 ))}
               </div>
-              {profile.tagline.map((t, i) => (
-                <span key={t}>
-                  {t}
-                  {i < profile.tagline.length - 1 && <i> /</i>}
+              {t(profile.tagline).map((item, i) => (
+                <span key={item}>
+                  {item}
+                  {i < t(profile.tagline).length - 1 && <i> /</i>}
                 </span>
               ))}
             </div>
 
-            <p className="hero__role-main">
-              {profile.role} — 5+ years building scalable APIs and optimizing critical systems
-              for retail, logistics and fintech.
-            </p>
+            <p className="hero__role-main">{t(profile.headline)}</p>
 
             <div className="hero__actions">
               <a className="btn btn--primary" href="#tour">
-                See my work <ArrowDownRight size={16} />
+                {t(ui.hero.seeWork)} <ArrowDownRight size={16} />
               </a>
               <a className="btn btn--ghost" href={`mailto:${profile.email}`}>
-                Get in touch
+                {t(ui.hero.getInTouch)}
               </a>
             </div>
 
             <div className="hero__meta">
               <span>
                 <MapPin size={12} style={{ display: 'inline', marginRight: 6 }} />
-                {profile.location}
+                {t(profile.location)}
               </span>
               <a href={`mailto:${profile.email}`}>
                 <Mail size={12} style={{ display: 'inline', marginRight: 6 }} />
@@ -87,10 +88,10 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.42 }}
           >
-            {stats.map((s, i) => (
-              <div className="stat" key={s.label} style={{ '--accent': STAT_COLORS[i] }}>
-                <div className="stat__value">{s.value}</div>
-                <div className="stat__label">{s.label}</div>
+            {stats.map((item, i) => (
+              <div className="stat" key={item.value} style={{ '--accent': STAT_COLORS[i] }}>
+                <div className="stat__value">{item.value}</div>
+                <div className="stat__label">{t(item.label)}</div>
               </div>
             ))}
           </motion.div>
