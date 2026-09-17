@@ -20,14 +20,14 @@ export const profile = {
   linkedin: 'https://www.linkedin.com/in/ingrid-natalia-rodríguez-ovalle-661709120/',
   summary: {
     en: [
-      'Backend Engineer with 5+ years of experience building scalable APIs and optimizing critical systems in retail and fintech, using Python and TypeScript.',
-      'Experienced in cloud-native architectures, asynchronous processing, API integrations, relational and NoSQL databases, containerized environments and DevOps practices. Strong background in software architecture and system design.',
-      'Specialist in asynchronous processing and critical system optimization, focused on reducing operational load and ensuring high availability. I use AI-driven workflows (Claude, Cursor) to accelerate architecture, documentation and debugging.',
+      'I have spent five years in backend, but I started writing C++ firmware for biometric devices used by Colombian government entities. Coming from hardware left me a useful obsession: assume everything fails — the network, the provider, the device — and design for that.',
+      'At Zebrands I build the services that move logistics for México and Brasil. My job is that a shipping label still gets created when FedEx takes eight seconds to answer, that a queue does not jam in the middle of Buen Fin, and that when something breaks it shows up on a dashboard before a customer reports it.',
+      'I work in Python and TypeScript, and for the past year with Claude and Cursor inside the engineering cycle — not to write code for me, but to explore designs, document decisions as ADRs and debug faster. I would rather ship a simple architecture someone else can maintain than an elegant one only I understand.',
     ],
     es: [
-      'Backend Engineer con más de 5 años de experiencia construyendo APIs escalables y optimizando sistemas críticos en retail y fintech, con Python y TypeScript.',
-      'Experiencia en arquitecturas cloud-native, procesamiento asíncrono, integración de APIs, bases de datos relacionales y NoSQL, entornos contenerizados y prácticas DevOps. Base sólida en arquitectura de software y diseño de sistemas.',
-      'Especialista en procesamiento asíncrono y optimización de sistemas críticos, enfocada en reducir carga operativa y garantizar alta disponibilidad. Uso flujos asistidos por IA (Claude, Cursor) para acelerar arquitectura, documentación y depuración.',
+      'Llevo cinco años en backend, pero empecé escribiendo firmware en C++ para dispositivos biométricos de entidades del Estado colombiano. Venir del hardware me dejó una obsesión útil: asumir que todo falla —la red, el proveedor, el dispositivo— y diseñar para eso.',
+      'En Zebrands construyo los servicios que mueven la logística de México y Brasil. Mi trabajo es que una guía se genere aunque FedEx tarde ocho segundos en responder, que una cola no se atore en pleno Buen Fin y que cuando algo se rompe se vea en un tablero antes de que lo reporte un cliente.',
+      'Trabajo con Python y TypeScript, y desde hace un año con Claude y Cursor dentro del ciclo de ingeniería: no para que escriban el código por mí, sino para explorar diseños, documentar decisiones en ADRs y depurar más rápido. Prefiero una arquitectura simple que otro pueda mantener antes que una elegante que sólo yo entienda.',
     ],
   },
 }
@@ -147,7 +147,7 @@ export const stages = [
     id: 'ops',
     stage: { en: 'Quality & observability', es: 'Calidad y observabilidad' },
     tone: 'acid',
-    note: { en: 'Testing, monitoring, AI tooling', es: 'Pruebas, monitoreo, herramientas IA' },
+    note: { en: 'Testing, monitoring, AI tooling', es: 'Pruebas, monitoreo, herramientas de IA' },
     skills: ['Grafana', 'Prometheus', 'Loki', 'Pytest', 'Jest', 'Unit & Integration Testing', 'BDD', 'Cursor AI', 'Claude', 'GitHub Copilot', 'Prompt Engineering'],
   },
 ]
@@ -307,7 +307,7 @@ export const languages = [
     name: { en: 'English', es: 'Inglés' },
     level: {
       en: 'Professional working proficiency (B1)',
-      es: 'Competencia profesional de trabajo (B1)',
+      es: 'Competencia profesional (B1)',
     },
     value: 65,
   },

@@ -32,13 +32,13 @@ export const ui = {
 
   about: {
     eyebrow: { en: 'About', es: 'Perfil' },
-    titleA: { en: 'A bit', es: 'Un poco' },
-    titleB: { en: 'about me', es: 'sobre mí' },
+    titleA: { en: 'From firmware to', es: 'De firmware a' },
+    titleB: { en: 'distributed systems', es: 'sistemas distribuidos' },
     languages: { en: 'Languages', es: 'Idiomas' },
     currently: { en: 'Currently', es: 'Actualmente' },
     currentlyText: {
-      en: 'Backend engineer at Zebrands, building services and data pipelines that keep retail and logistics operations running.',
-      es: 'Backend engineer en Zebrands, construyendo servicios y pipelines de datos que sostienen la operación de retail y logística.',
+      en: 'Backend Engineer at Zebrands, building the services and data pipelines behind retail and logistics operations in México and Brasil.',
+      es: 'Backend Engineer en Zebrands, construyendo los servicios y pipelines de datos que sostienen la operación de retail y logística en México y Brasil.',
     },
   },
 
@@ -65,8 +65,8 @@ export const ui = {
 
   brands: {
     eyebrow: { en: 'Clients & brands', es: 'Clientes y marcas' },
-    titleA: { en: 'Brands I have', es: 'Marcas para las' },
-    titleB: { en: 'shipped for', es: 'que he construido' },
+    titleA: { en: 'Brands I have', es: 'Marcas en las que' },
+    titleB: { en: 'shipped for', es: 'he trabajado' },
     lead: {
       en: 'Product brands whose backend, integrations and data flows I have built and kept running. Each logo opens its official site.',
       es: 'Marcas cuyo backend, integraciones y flujos de datos construí y mantuve funcionando. Cada logo abre su sitio oficial.',
